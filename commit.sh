@@ -10,7 +10,7 @@ do
   do
     mkdir $M
     cd $M
-    for D in {10..13..4}
+    for D in {10..23..4}
     do
       mkdir $D
       cd $D
