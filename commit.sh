@@ -6,15 +6,15 @@ for Y in {2016..2016}
 do
   mkdir $Y
   cd $Y
-  for M in {06..06}
+  for M in {05..05}
   do
     mkdir $M
     cd $M
-    for D in {01..04}
+    for D in {14..16..2}
     do
       mkdir $D
       cd $D
-      range=$((RANDOM % 5))
+      range=$((RANDOM % 3))
       for i in `eval echo {1..$range}`
       do
         echo "$i on $M/$D/$Y" > commit.md
